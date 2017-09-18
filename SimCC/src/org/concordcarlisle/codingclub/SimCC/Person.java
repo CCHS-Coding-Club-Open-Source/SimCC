@@ -9,6 +9,13 @@ public class Person
    boolean license, car;
    Schedule schedule;
    
+   public Person(String name, int loc[], int age)
+   {
+      nameOfPerson  = name;
+      location      = loc;
+      this.age      = age;
+   }
+   
    public Person(String name, int[] loc, int age, int sp, int stress, int sleep, boolean l, boolean c, Schedule s)
    {
       nameOfPerson  = name;
@@ -20,5 +27,13 @@ public class Person
       license       = l;
       car           = c;
       schedule      = s;
+   }
+   
+   public void goToStair()
+   {}
+   
+   public void leaveBuilding()
+   {
+      goToStair();
    }
 }
