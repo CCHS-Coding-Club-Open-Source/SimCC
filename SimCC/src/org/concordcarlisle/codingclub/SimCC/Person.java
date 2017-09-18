@@ -9,6 +9,7 @@ public class Person
    int age, speed, stressLevel, amountOfSleep;
    boolean license, car;
    Schedule schedule;
+   int[] size = new int[] {10, 10}; // arbitrary circle size
    
    public Person(String name, int loc[], int age)
    {
