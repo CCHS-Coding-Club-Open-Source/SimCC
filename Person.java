@@ -4,4 +4,19 @@
 public class Person
 {
    String nameOfPerson;
+   int[] location = new int[3];
+   int age, speed, stressLevel, amountOfSleep;
+   boolean license, car;
+   
+   public Person(String name, int[] loc, int age, int sp, int stress, int sleep, boolean l, boolean c)
+   {
+      nameOfPerson = name;
+      location = loc;
+      this.age = age;
+      speed = sp;
+      stressLevel = stress;
+      amountOfSleep = sleep;
+      license = l;
+      car = c;
+   }
 }
