@@ -1,3 +1,4 @@
+
 public class Furniture
 {
   boolean passable = false, pushable;
