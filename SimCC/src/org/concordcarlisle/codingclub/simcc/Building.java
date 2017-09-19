@@ -1,3 +1,5 @@
+package org.concordcarlisle.codingclub.simcc;
+
 
 import java.util.ArrayList;
 public class Building

@@ -1,3 +1,5 @@
+package org.concordcarlisle.codingclub.simcc;
+
 
 /**
  * Person class initiated by ABeckwith
