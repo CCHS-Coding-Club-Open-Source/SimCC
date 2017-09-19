@@ -3,5 +3,11 @@ package org.concordcarlisle.codingclub.simcc;
 
 public class Teacher extends Person
 {
-  float testFreq;
+	
+  public Teacher() {
+		super();
+		// TODO Add args
+	}
+
+float testFreq;
 }
