@@ -27,3 +27,13 @@ PART 2: Setting up Eclipse
   5. Finish
   
   If successful, you should have the project's packages on the left.
+
+
+# Pushing/Pulling/Syncing/Fetching Changes from/to the repository using GitHub Desktop
+To 'upload/download' changes, click the "fetch" button if availible (it may've done it automatically), then click the "pull" or "push" button.
+
+Fetch checks for changes, Pull downloads new changes from GitHub, and Push uploads new changes from your computer.
+
+
+# Please note
+We are mostly pulling/pushing to the master branch of the main repository at the moment. Avoid pull requests, forks, and branches unless you know what you're doing, as it's difficult to collaborate when we don't realize you are working seperately.
