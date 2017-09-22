@@ -1,4 +1,4 @@
-package org.concordcarlisle.codingclub.simcc;
+package org.concordcarlisle.codingclub.simcc.people;
 
 
 public class Teacher extends Person

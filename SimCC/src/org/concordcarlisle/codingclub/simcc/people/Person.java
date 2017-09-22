@@ -1,5 +1,6 @@
-package org.concordcarlisle.codingclub.simcc;
+package org.concordcarlisle.codingclub.simcc.people;
 
+import org.concordcarlisle.codingclub.simcc.logic.Schedule;
 
 /**
  * Person class initiated by ABeckwith
