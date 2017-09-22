@@ -1,11 +1,12 @@
 package org.concordcarlisle.codingclub.simcc.building;
 
+import java.util.Map;
 
-import java.util.ArrayList;
 public class Building {
-	ArrayList<Room> f1, f2, f3, f4;
-
-
+	private Map<Integer, Floor> floors; //"Dictionary" of floors. Stores as FloorNumber:FloorObject
 	
+	public Floor getFloor(int floorNumber) {
+		return floors.get(floorNumber);
+	}
 	
 }
