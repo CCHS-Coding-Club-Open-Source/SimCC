@@ -1,0 +1,83 @@
+CODING CLUB PROJECT: A Full-Fledged SIM-CC
+• using Java, for run-time speed
+• could share with the school community
+Notes 
+
+Everyone needs  java IDE
+
+
+Everybody needs GitHub
+
+Proposed Starting Time
+
+Those for learning how will we structure
+
+Place for those who Haven’t coded
+
+Coding:
+classes: Building, Room, Bathroom, Stairs, Door, Hall, Behavior
+
+
+Person:
+	•	students, teachers, custodians, administrators
+	•	Name, location (x,y,z), schedule, age, speed, stressLevel, amountOfSleep, license, car,
+	•	Student: 
+	•	Student, Teacher, Schedule, etc.
+Student: gpa, YOG, motivationLevel, infraction list, disobedience
+	•	go to bathroom
+	•	Ask a question
+	•	Skip class (where do they go)
+	•	Leave building
+	•	Go towards stairwell
+Teacher: strictness, list of favorites (w/ranks), satisfaction level, intensity, ennui, test frequency
+Sub inherits from Teacher
+Room: # of desks, layout, room number
+Floor of building: rooms, the halls, the stairs
+Door: open or not
+Clubs, sports
+Music room - have it play music
+Gas valves: fire explodes
+Substitutes
+Bullying
+GUI: for maps and characters and buttons and menus
+drawing engine, game engine (or “school engine”), etc.
+an interface for editing the building or people, etc.
+
+Person:
+	subclass: ScheduledPerson
+		subclasses: Teacher, Student
+each ScheduledPerson has a Schedule object
+each Schedule object has Class objects
+each Class object has a Room object
+
+Possible Simulations/Features:
+• students moving through the hall at passing time (prevent collisions)
+• students interacting with each other, teachers, going to the bathroom and returning, etc.
+• moving down the stairs
+• dealing with fire alarm
+• moving from all rooms to the auditorium 
+Part of the point of the simulation would be to analyze constraints of the building and it might be cool to offer alternate possible fire escape paths based on bottlenecks that we see in the code.
+• different schedules: MCAS, assembly, etc.
+• a variety of buttons and/or key bindings to take actions (pause, fire drill, etc.)
+• be able to click on any member of the school community to get info about them
+• have a mode that shows real-time classes (if it’s 8:05, it’s Ablock)
+• buses to pick kids up at the end of the day
+• the parking lot
+
+Challenges: 
+• pathfinding algorithm
+• ability to zoom in for closer details of rooms (see Aidan N-Z code)
+• code to schedule students into their classes
+• have characters that move - should face the direction they are moving
+• have characters with a specific purpose
+• self driving cars in the parking lot
+
+File I/O:
+• store in a .csv file (or Serialize): a bunch of info about real teachers and real courses (maybe a few real students - students in coding club?).  
+
+
+Non-Coding tasks:
+• gathering/storing student and school data
+• working with school maps
+• creating the digital character images
+• brainstorm new ideas/features
