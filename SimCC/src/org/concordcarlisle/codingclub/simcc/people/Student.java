@@ -9,7 +9,7 @@ public class Student extends Person
 
 	public Student(double g, int y, int m)
 	{
-		super(_some_args_here);
+		super();
 		gpa = g;
 		yog = y;
 		motivationLevel = m;
