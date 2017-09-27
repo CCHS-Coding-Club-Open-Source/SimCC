@@ -1,5 +1,7 @@
 # SimCC
 A simulation of CCHS.
+[ ![Codeship Status for CCHS-Coding-Club-Open-Source/SimCC](https://app.codeship.com/projects/bd5ec920-85ce-0135-6f9a-3680cfc00fed/status?branch=master)](https://app.codeship.com/projects/248009)
+
 
 # Setup for editing
 PART 1: Downloading the repository.
