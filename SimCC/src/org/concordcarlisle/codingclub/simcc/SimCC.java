@@ -1,6 +1,7 @@
 package org.concordcarlisle.codingclub.simcc;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -12,10 +13,13 @@ public class SimCC {
 	public static boolean DEBUG_MODE = true;
 	public static int BUILDING_POPULATION = 100;
 	// Declare
+	public static boolean testMode;
 	static Building bldg;
 	static ArrayList<Person> people = new ArrayList<Person>();
 	
 	public static void main(String[] args) {
+		testMode = Arrays.asList(args).contains("testMode");
+
 		// Initialize
 		bldg = new Building();
 		
@@ -24,7 +28,12 @@ public class SimCC {
 		//System.out.println(bldg.getFloor(1).getRoom(23));
 		
 		populatePeople(BUILDING_POPULATION);
-		logicTick();//logicLoop(); Run once for now. TODO Get logic so that stuff is changing, and use the loop.
+		
+		if (testMode) {
+			for(int i = 0; i < 10; i++) logicTick();  // Tick only 10 times if in test mode
+		}else{
+			logicLoop();  // If running normally, start the logic/tick loop
+		}
 	}
 	
 	private static void populatePeople(int numberOfStudents) {
@@ -33,7 +42,6 @@ public class SimCC {
 		}
 	}
 	
-	@SuppressWarnings("unused") //TODO this should be temporary while we aren't using the loop
 	private static void logicLoop() {
 		Timer timer = new Timer();
 		TimerTask tickTask = new TimerTask() {
