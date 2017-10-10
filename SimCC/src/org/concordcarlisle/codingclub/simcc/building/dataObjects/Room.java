@@ -1,4 +1,4 @@
-package org.concordcarlisle.codingclub.simcc.building;
+package org.concordcarlisle.codingclub.simcc.building.dataObjects;
 
 
 public class Room

@@ -3,6 +3,8 @@ package org.concordcarlisle.codingclub.simcc.building;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.concordcarlisle.codingclub.simcc.building.dataObjects.Floor;
+
 public class Building {
 	private Map<Integer, Floor> floors = new HashMap<Integer, Floor>(); //"Dictionary" of floors. Stores as FloorNumber:FloorObject
 	

@@ -1,4 +1,4 @@
-package org.concordcarlisle.codingclub.simcc.building;
+package org.concordcarlisle.codingclub.simcc.building.dataObjects;
 
 import java.util.HashMap;
 import java.util.Map;
