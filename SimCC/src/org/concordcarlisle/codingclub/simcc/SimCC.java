@@ -37,9 +37,9 @@ public class SimCC {
 	}
 	
 	private static void populatePeople(int numberOfStudents) {
-		for(int i = 0; i < numberOfStudents; i++) {
-			people.add(PeopleGenerator.generatePerson(bldg));
-		}
+		int number = 10;
+		people = PeopleGenerator.generatePeople(number, bldg);
+		
 	}
 	
 	private static void logicLoop() {

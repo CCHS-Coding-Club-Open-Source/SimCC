@@ -38,18 +38,11 @@ public class Person
 		schedule      = s;
 	}
 
-	public Person(Building buildingToBeIn) {
+	public Person(Building buildingToBeIn, int age) {
 		this.building = buildingToBeIn;
 		
-		Random rand = new Random();
-
-	    // nextInt is normally exclusive of the top value,
-	    // so add 1 to make it inclusive
-	    int randomNum = rand.nextInt((60 - 10) + 1) + 10;
-
 		
-		this.age = randomNum;
-		// TODO Remove this method and improve the other ones
+		this.age = age;
 	}
 
 	public void goToStair()
