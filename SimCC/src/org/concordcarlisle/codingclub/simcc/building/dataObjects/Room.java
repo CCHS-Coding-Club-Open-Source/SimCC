@@ -10,9 +10,14 @@ public class Room
 	public Room() {
 		System.out.println("I'm a room!");
 	}
-	public array[][] studentRooms(rooms[], students[]){
-		for (Int a : rooms[]){
-		
+	public [][] studentRooms(rooms[], students[]) {//change to map??
+		for (Int a : rooms[]) {
+			//SiR = Students in Room
+			//SPR = StudentsPerRoom
+			for (SiR = 0; SiR < SPR; SiR++){
+				studentRooms[room[i]][students[SiR]];
+				
+			}
 		}
 		}
 	}
