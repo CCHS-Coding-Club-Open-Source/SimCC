@@ -22,6 +22,18 @@ public class NeuralNetwork {
         biases = new ArrayList<>();
     }
     
+    public NeuralNetwork deepCopy() {
+        NeuralNetwork clone = new NeuralNetwork();
+        clone.setLayers((ArrayList<Integer>) layers.clone(), (ArrayList<String>) activations.clone());
+        ArrayList<ArrayList<Double>> newWeights = new ArrayList<>();
+        weights.stream().forEach((weightLayer) -> {
+            newWeights.add((ArrayList<Double>) weightLayer.clone());
+        });
+        clone.setWeights(newWeights);
+        clone.setBiases((ArrayList<Double>) biases.clone());
+        return clone;
+    }
+    
     public void setLayers(ArrayList<Integer> layers, ArrayList<String> activations) {
         this.layers = layers;
         this.activations = activations;
