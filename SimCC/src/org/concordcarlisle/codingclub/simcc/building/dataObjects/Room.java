@@ -1,5 +1,6 @@
 package org.concordcarlisle.codingclub.simcc.building.dataObjects;
 
+import org.concordcarlisle.codingclub.simcc.people.Student;
 
 public class Room
 {
@@ -10,15 +11,18 @@ public class Room
 	public Room() {
 		System.out.println("I'm a room!");
 	}
-	public [][] studentRooms(rooms[], students[]) {//change to map??
-		for (Int a : rooms[]) {
+	
+	//TODO Fix whatever this is supposed to be doing
+	/*public [][] studentRooms(Room[] rooms, Student[] students) {//change to map??
+		for (Room r : rooms) {
 			//SiR = Students in Room
 			//SPR = StudentsPerRoom
+			
 			for (SiR = 0; SiR < SPR; SiR++){
 				studentRooms[room[i]][students[SiR]];
 				
 			}
+			
 		}
-		}
-	}
+	}*/
 }
