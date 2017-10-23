@@ -1,7 +1,5 @@
 package org.concordcarlisle.codingclub.simcc.building.dataObjects;
 
-import org.concordcarlisle.codingclub.simcc.people.Student;
-
 public class Room
 {
 	String floor; // Floor "Number" (which we treat as a string so that arrays can start at 1)
