@@ -3,6 +3,7 @@ package org.concordcarlisle.codingclub.simcc.people;
 import java.util.Random;
 
 import org.concordcarlisle.codingclub.simcc.building.Building;
+import org.concordcarlisle.codingclub.simcc.logic.Behavior;
 
 /**
  * Person class initiated by ABeckwith
@@ -16,6 +17,7 @@ public class Person
 	boolean license, car;
 	Schedule schedule;
 	int[] size = new int[] {10, 10}; // arbitrary circle size
+        Behavior behavior;
 
 	public Person(Building buildingToBeIn, String name, int loc[], int age)
 	{
